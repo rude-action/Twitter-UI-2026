@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>X Ext</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header>
+    <h1>X Ext</h1>
+    <button id="open-library" class="link">ライブラリ</button>
+  </header>
+
+  <section>
+    <h2>テーマ</h2>
+    <div id="themes" class="theme-grid"></div>
+  </section>
+
+  <section>
+    <h2>レイアウト</h2>
+    <label class="toggle"><input type="checkbox" data-key="collapseNav" /> ナビをアイコンのみに折りたたむ</label>
+    <label class="toggle"><input type="checkbox" data-key="hideSidebar" /> 右サイドバーを非表示</label>
+    <label class="toggle"><input type="checkbox" data-key="centerFeed" /> フィードを中央寄せ・拡幅</label>
+    <label class="toggle"><input type="checkbox" data-key="compactDensity" /> 行間を狭くする</label>
+    <label class="toggle"><input type="checkbox" data-key="hidePromoted" /> プロモ投稿を非表示</label>
+  </section>
+
+  <script type="module" src="popup.ts"></script>
+</body>
+</html>

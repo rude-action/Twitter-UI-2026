@@ -1,0 +1,44 @@
+{
+  "manifest_version": 3,
+  "name": "X Ext — Themes & Library for X",
+  "version": "0.1.0",
+  "description": "Custom themes, layout tweaks and a local save-library for X (Twitter). All data stays in your browser.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "*://x.com/*",
+    "*://twitter.com/*"
+  ],
+  "content_scripts": [
+    {
+      "js": [
+        "assets/index.ts-loader-BUuNpxrI.js"
+      ],
+      "matches": [
+        "*://x.com/*",
+        "*://twitter.com/*"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "action": {
+    "default_popup": "src/popup/popup.html",
+    "default_title": "X Ext"
+  },
+  "options_page": "src/pages/library.html",
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "*://twitter.com/*",
+        "*://x.com/*"
+      ],
+      "resources": [
+        "assets/themes-CG8wGZnk.js",
+        "assets/storage-DhCMBcHk.js",
+        "assets/index.ts-ad2gXENe.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
